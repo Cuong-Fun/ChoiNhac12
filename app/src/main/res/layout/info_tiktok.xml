@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/numberone"
+        android:background="#FFFFFF">
+        <ImageView
+            android:onClick="dongTrangCaNhan"
+            android:layout_width="@dimen/numberone"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/txvTenNguoiDung"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Đông Nhi"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#121010">
+        </TextView>
+        <ImageView
+            android:layout_width="@dimen/numberone"
+            android:layout_height="match_parent"
+            android:src="@drawable/more"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            >
+        </ImageView>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+            android:background="#939393">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAnhNguoiDung"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/dongnhi"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#888888"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="-10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txvTenRutGon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="\@Đông Nhi"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="#121111"
+            android:layout_marginLeft="20dp"
+
+            >
+        </TextView>
+        <ImageView
+            android:id="@+id/imgNguoiNoiTieng"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/stick"
+            android:layout_marginLeft="5dp"
+            app:tint="#1D7CDC">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvLuotDiTheodoi"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Following"
+                android:textColor="#656565"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#939393" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvLuotTheoDoi"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="3m"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Follower"
+                android:textColor="#656565"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#939393" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvLuotTim"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="11m"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Like"
+                android:textColor="#656565"
+                android:textSize="14sp" />
+        </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:orientation="horizontal">
+        <Button
+            android:background="@drawable/botron"
+            android:text="Follow"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/boder"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/downarrow"/>
+
+    </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="10dp"
+           android:gravity="center"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:id="@+id/txvMoTA"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hát hay là hay hát"
+               android:textColor="#353434"
+               android:textSize="16sp">
+           </TextView>
+       </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#939393" />
+
+    <GridView
+        android:id="@+id/gdvDanhSachBaiViet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        />
+
+</LinearLayout>
+
+
