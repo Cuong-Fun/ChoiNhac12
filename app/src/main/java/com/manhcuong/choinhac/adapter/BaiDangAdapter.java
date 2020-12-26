@@ -32,7 +32,7 @@ public class BaiDangAdapter extends ArrayAdapter {
     @Override // convertView: Lấy Hình Ảnh rồi đổ xuống inflater rồi sau đó đẩy lên arrBaiDang
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) { // code tự sinh câu lệnh
         if (convertView == null) {
-            LayoutInflater inflater = (LayoutInflater) ct.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                LayoutInflater inflater = (LayoutInflater) ct.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.bai_dang, null);
         }
             BaiDang b = arrBaiDang.get(position);  // position : get dữ liệu , chạy lần lượt từ đầu đến cuối, tự thêm xóa khi vuốt màn hình android
